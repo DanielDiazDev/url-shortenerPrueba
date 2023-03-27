@@ -1,0 +1,19 @@
+﻿@model Url
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Detalles de la URL</h2>
+<table>
+    <tr>
+        <td>URL original</td>
+        <td>@Model.OriginalUrl</td>
+    </tr>
+    <tr>
+        <td>URL corta</td>
+        <td>@Model.ShortenedUrl</td>
+    </tr>
+</table>
+<a asp-action="Index">Volver a la lista de URLs</a>

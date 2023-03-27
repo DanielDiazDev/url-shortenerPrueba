@@ -1,0 +1,79 @@
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.pdb
+*.dll.config
+*.cache
+*.log
+*.vspscc
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.zip
+*.gz
+*.rar
+*.tar
+
+# Logs and databases #
+######################
+*.db
+*.db3
+*.log
+*.sqlite
+*.sqlite3
+*.sdf
+*.mdf
+*.ldb
+
+# OS generated files #
+######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Visual Studio files #
+#######################
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.psc
+*.vssscc
+*.vs10x
+*.pdb
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+*_i.c
+*_p.c
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vstemplate
+*.zip
+*.csproj.user
+*.cache
+*.docstates.suo

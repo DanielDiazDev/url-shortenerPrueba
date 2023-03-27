@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Url>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<h2>Lista de URLs</h2>
+<table>
+    <thead>
+            <tr>
+                <th>URL original</th>
+                <th>URL corta</th>
+                <th></th>
+            </tr>
+        </thead>
+    <tbody>
+    @foreach (var url in Model)
+    {
+        <tr>
+            <td>@url.OriginalUrl</td>
+            <td>@url.ShortenedUrl</td>
+            <td>
+                
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" name="id" value="@url.Id"/>
+                    <input type="submit" value="Eliminar" class="btn btn-danger"/>
+                </form>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<a asp-action="Create">Acortar nueva URL</a>
